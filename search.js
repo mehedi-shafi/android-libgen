@@ -1,23 +1,24 @@
 import async from 'async';
 
 const search_path = '/search.php';
+const book_info_path = '/json.php';
 const ID_REGEX = /ID\:[^0-9]+[0-9]+[^0-9]/g;
 const RESULT_REGEX = /[0-9]+\ files\ found/i;
 
 let currentPageNo = 1;
 
-let urlBuilder = (options, callback) => {
+let urlBuilder = (options) => {
     if (!options.mirror)
-        return callback(new Error('No mirror provided to search function'));
+        return new Error('No mirror provided to search function');
 
     else if (!options.query)
-        return callback(new Error('No search query given'));
+        return new Error('No search query given');
 
     else if (options.query.length < 4)
-        return callback(new Error('Search query must be at least four characters'));
+        return new Error('Search query must be at least four characters');
 
     if (!options.count || !parseInt(options.count))
-        return options.count = 10;
+        options.count = 10;
 
     const sort = options.sort_by || 'def';
 
@@ -51,16 +52,14 @@ let extractIds = (html) => {
     return ids;
 }
 
-const search = (options, callback) => {
+const getIds = (options, callback) => {
     currentPageNo = 1;
     let searchIds = [];
     async.until(
         () => {return searchIds.length >= options.count; },
         (callback) => {
             currentPageNo = Math.floor((searchIds.length / 25) + 1);
-            let query = urlBuilder(options, (response) => {
-                console.log(response);
-            });
+            let query = urlBuilder(options);
             fetch(query)
                 .then((data) => data.text())
                 .then((data) => {
@@ -84,4 +83,18 @@ const search = (options, callback) => {
     );
 }
 
-export default Search = search;
+let Search = (options, callback) => {
+    getIds(options, (idList) => {
+        console.log(idList);
+        const bookListUrl = options.mirror + book_info_path + `?ids=${idList.join(',')}&fields=*`;
+        fetch(bookListUrl)
+            .then((data) => data.json())
+            .then((data) => {
+                callback(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    });
+}
+export default Search;
