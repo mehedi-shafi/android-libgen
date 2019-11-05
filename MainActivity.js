@@ -41,6 +41,7 @@ export default class MainActivity extends React.Component{
         this.state = {
             searchString: '',
             searching: false,
+            searchResult: []
         };
     }
 
@@ -53,7 +54,8 @@ export default class MainActivity extends React.Component{
             column: 'def',
             mirror: 'http://gen.lib.rus.ec'
         }, (response) => {
-            console.log(response);
+            console.log(JSON.stringify(response, null, 2));       
+            this.setState({searchResult: response});
         });
     };
 
@@ -67,10 +69,10 @@ export default class MainActivity extends React.Component{
                     onChangeText={searchString => { this.setState({ searchString }); }}
                     value={this.state.searchString}
                     onSubmitEditing={this.runSearch}
-                />
+                />            
                 <Text
                     style={styles.underText}
-                >{searchTip}</Text>
+                >{JSON.stringify(this.state.searchResult)}</Text>
             </View>
         );
     }
