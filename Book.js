@@ -1,19 +1,26 @@
 
 export default class Book{
+
     constructor(args){
-        this.title = args.title;
-        this.author = args.author;
-        this.year = args.year;
-        this.publisher = args.publisher;
-        this.edition = args.edition;
-        this.language = args.language;
-        this.pages = args.pages;
-        this.file_type = args.file_type;
-        this.time_added = args.time_added;
-        this.last_modified = args.last_modified;
-        this.description = args.description;
-        this.torrent_url = args.torrent;
-        this.direct_url = args.direct;
-        this.thumb_url = args.thumbnail;
+        this.id             = this.validate(args.id);
+        this.title          = this.validate(args.title);
+        this.author         = this.validate(args.author);
+        this.year           = this.validate(args.year);
+        this.publisher      = this.validate(args.publisher);
+        this.edition        = this.validate(args.edition);
+        this.language       = this.validate(args.language);
+        this.pages          = this.validate(args.pages);
+        this.md5            = this.validate(args.md5);
+        this.file_type      = this.validate(args.extension);
+        this.time_added     = this.validate(args.timeadded);
+        this.last_modified  = this.validate(args.timelastmodified);
+        this.description    = this.validate(args.description);
+        this.torrent_url    = this.validate(args.torrent);
+        this.direct_url     = this.validate(args.direct);
+        this.thumb_url      = this.validate(args.coverurl);
+    }
+
+    validate = (arg) => {
+        return (arg) ? arg : '';
     }
 }
