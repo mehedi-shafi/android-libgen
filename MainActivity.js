@@ -15,16 +15,16 @@ import Search from './search';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#121212',
+        backgroundColor: '#fff',
         alignContent: 'center',
         justifyContent: 'center',
     },
     searchbox:{
         margin: 20,
-        backgroundColor:'#333333'
+        backgroundColor:'#fff'
     },
     underText:{
-        color: '#ffffff',
+        color: '#000',
         marginLeft: 20,
         marginTop: 8,
         marginRight: 20,
@@ -72,7 +72,7 @@ export default class MainActivity extends React.Component{
                 />            
                 <Text
                     style={styles.underText}
-                >{JSON.stringify(this.state.searchResult)}</Text>
+                >{(this.state.searchResult.length > 0) ? JSON.stringify(this.state.searchResult) : ''}</Text>
             </View>
         );
     }
