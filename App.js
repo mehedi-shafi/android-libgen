@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 import MainActivity from './MainActivity';
+import BookRowComponent from './BookRow';
+import {Book, SampleBook} from './Book';
 
 export default class App extends React.Component{
   constructor(props){
@@ -10,7 +12,10 @@ export default class App extends React.Component{
 
   render(){
     return (
-      <MainActivity />
+      // <MainActivity />
+      <BookRowComponent
+        book={SampleBook} 
+      />
     );
   }
 }
