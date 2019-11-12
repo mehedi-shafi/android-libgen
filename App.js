@@ -15,12 +15,7 @@ export default class App extends React.Component{
   render(){
     let books = getSampleBookList(20);
     return (
-      // <MainActivity />
-      // <BookRowComponent
-      //   book={SampleBook} 
-      // />
-      <BookListComponent
-        bookList={books} />
+      <MainActivity />
     );
   }
 }
