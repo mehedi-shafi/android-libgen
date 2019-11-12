@@ -10,7 +10,7 @@ import {
     Text,
 } from 'react-native-paper';
 
-import Search from './search';
+import Search from '../../../api/search';
 
 const styles = StyleSheet.create({
     container: {
