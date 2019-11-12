@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     Surface,
     Text,
@@ -21,6 +22,9 @@ const style = StyleSheet.create({
         padding: 10,
         elevation: 5,
         justifyContent: 'center'
+    },
+    titleText:{
+        textAlign: 'justify'
     }
 });
 
@@ -36,7 +40,7 @@ export default class BookRowComponent extends React.Component{
         return(
             <Surface style={style.body}>
                 <Surface style={style.bookRowCard}>
-                    <Title>{this.state.book.title}</Title>
+                    <Title style={style.titleText}>{this.state.book.title}</Title>
                     <Subheading>{this.state.book.author}</Subheading>
                     <Text>Language: {this.state.book.language}</Text>
                     <Text>Year: {this.state.book.year}</Text>
