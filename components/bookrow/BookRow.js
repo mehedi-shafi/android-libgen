@@ -8,44 +8,34 @@ import {
     Subheading,   
 } from 'react-native-paper';
 
-import { StyleSheet } from 'react-native';
-
-const style = StyleSheet.create({
-    body:{
-      flex: 1,
-      alignContent: 'center',
-      justifyContent: 'center',  
-    },
-    bookRowCard:{
-        height: 250,
-        margin: 10,
-        padding: 15,
-        elevation: 5,
-        justifyContent: 'center'
-    },
-    titleText:{
-        textAlign: 'justify'
-    }
-});
+import styles from './style';
 
 export default class BookRowComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            book:   props.book
+            book: props.book
         };
     }
 
     render(){
         return(
-            <Surface style={style.body}>
-                <Surface style={style.bookRowCard}>
-                    <Title style={style.titleText}>{this.state.book.title}</Title>
-                    <Subheading>{this.state.book.author}</Subheading>
-                    <Text>Language: {this.state.book.language}</Text>
-                    <Text>Year: {this.state.book.year}</Text>
-                    <Text>Number of pages: {this.state.book.pageno}</Text>
-                    <Text>Format: {this.state.book.file_type}</Text>
+            <Surface style={styles.body}>
+                <Surface style={styles.bookRowCard}>
+                    <Text style={styles.titleText}>{this.state.book.title}</Text>
+                    <Text style={styles.subTitleText}>{this.state.book.author}</Text>
+                    <Text>Language:{'  '}
+                        <Text style={styles.infoText}>{this.state.book.language}</Text>
+                    </Text>
+                    <Text>Year: {'  '}
+                        <Text style={styles.infoText}>{this.state.book.year}</Text>
+                    </Text>
+                    <Text>Number of pages: {'  '}
+                        <Text style={styles.infoText}>{this.state.book.pageno}</Text>
+                    </Text>
+                    <Text>Format: {'  '}
+                        <Text style={styles.infoText}>{this.state.book.file_type}</Text>
+                    </Text>
                 </Surface>
             </Surface>
         )
