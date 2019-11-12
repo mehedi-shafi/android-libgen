@@ -3,7 +3,9 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 
 import MainActivity from './components/activity/mainactivity/MainActivity';
 import BookRowComponent from './components/bookrow/BookRow';
-import { SampleBook } from './models/Book';
+import BookListComponent from './components/booklist/BookList';
+
+import { SampleBook, getSampleBookList } from './models/Book';
 
 export default class App extends React.Component{
   constructor(props){
@@ -11,11 +13,14 @@ export default class App extends React.Component{
   }
 
   render(){
+    let books = getSampleBookList(20);
     return (
       // <MainActivity />
-      <BookRowComponent
-        book={SampleBook} 
-      />
+      // <BookRowComponent
+      //   book={SampleBook} 
+      // />
+      <BookListComponent
+        bookList={books} />
     );
   }
 }

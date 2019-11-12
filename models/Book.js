@@ -84,3 +84,11 @@ export const SampleBook = new Book({
     "btih": "1ba1ef43589d90394eed3243befe055e11232ee8",
     "torrent": "ZDQ6aW5mb2Q2Omxlbmd0aGkxODM4OTYwZTQ6bmFtZTMyOjhlODQ5ZjcwOWFiNzFmNmUxODY3Y2IxYThmMTIyOWMwMTI6cGllY2UgbGVuZ3RoaTE2Nzc3MjE2ZTY6cGllY2VzMjA6quR4q+IeaKmsvbD1eMBZX7+URTdlZQ=="
 });
+
+export const getSampleBookList = (count) => {
+    let sampleBookList = [];
+    for (let i = 0; i < count; i++){
+        sampleBookList.push(SampleBook)
+    }
+    return sampleBookList;
+}
