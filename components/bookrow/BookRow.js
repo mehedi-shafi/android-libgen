@@ -18,8 +18,8 @@ const style = StyleSheet.create({
     },
     bookRowCard:{
         height: 250,
-        margin: 20,
-        padding: 10,
+        margin: 10,
+        padding: 15,
         elevation: 5,
         justifyContent: 'center'
     },

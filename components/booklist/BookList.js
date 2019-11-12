@@ -20,8 +20,11 @@ export default class BookList extends React.Component{
         return (
             <FlatList
                 data={this.state.bookList}
-                renderItem={({item}) => <BookRowComponent book={item}/>}>
-            </FlatList>
+                renderItem={
+                    ({item}) => <BookRowComponent book={item}/>
+                }
+                keyExtractor={
+                    (item, index) => index.toString()}/>
         )
     }
 }
