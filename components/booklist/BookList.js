@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 
 import BookRowComponent from '../bookrow/BookRow';
+import styles from './styles';
 
 import {
     Surface,
@@ -18,13 +19,15 @@ export default class BookList extends React.Component{
 
     render(){
         return (
-            <FlatList
+            <View style={styles.fullScreen}>
+                <FlatList
                 data={this.state.bookList}
                 renderItem={
                     ({item}) => <BookRowComponent book={item}/>
                 }
                 keyExtractor={
                     (item, index) => index.toString()}/>
+            </View>
         )
     }
 }
