@@ -1,11 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStckNavigator, createStackNavigator } from 'react-navigation-stack';
 
+// activities
 import MainActivity from './components/activity/mainactivity/MainActivity';
-import BookRowComponent from './components/bookrow/BookRow';
-import BookListComponent from './components/booklist/BookList';
+import SearchResultActivity from './components/activity/searchresult/SearchResult';
 
-import { SampleBook, getSampleBookList } from './models/Book';
+const ROOT_STACK = createStackNavigator(
+  {
+    Home: MainActivity,
+    SearchResult: SearchResultActivity
+  },
+  {
+    initialRouteName: 'Home'
+  }
+);
+
+const AppContainer = createAppContainer(ROOT_STACK);
 
 export default class App extends React.Component{
   constructor(props){
@@ -13,9 +25,8 @@ export default class App extends React.Component{
   }
 
   render(){
-    let books = getSampleBookList(20);
     return (
-      <MainActivity />
+      <AppContainer />
     );
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import BookListComponent from '../../booklist/BookList';
-
 import {
     View,
     StyleSheet,
@@ -14,27 +12,7 @@ import {
 
 import Search from '../../../api/search';
 import Book from '../../../models/Book';
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignContent: 'center',
-        justifyContent: 'center',
-    },
-    searchbox:{
-        margin: 20,
-        backgroundColor:'#fff'
-    },
-    underText:{
-        color: '#000',
-        marginLeft: 20,
-        marginTop: 8,
-        marginRight: 20,
-        fontSize: 16
-    }
-  });
-
+import styles from './styles';
 
 const searchTip = "Search with book name, author name, or ISBN";  
 
@@ -58,6 +36,8 @@ export default class MainActivity extends React.Component{
             mirror: 'http://gen.lib.rus.ec'
         }, (response) => {       
             this.setState({searchResult: response});
+            this.createBookList();
+            
         });
     };
 
@@ -66,16 +46,11 @@ export default class MainActivity extends React.Component{
         for (let i = 0; i < this.state.searchResult.length; ++i){
             books.push(new Book(this.state.searchResult[i]));
         }
-        return books;
+        this.props.navigation.navigate('SearchResult', {
+                'bookList': books});
     }
 
     render(){
-        if (this.state.searchResult.length > 0){
-            return(
-                <BookListComponent
-                    bookList={this.createBookList()} />
-            )
-        }
         return(
             <View
              style={styles.container}>
