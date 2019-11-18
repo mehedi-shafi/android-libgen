@@ -1,9 +1,5 @@
 import React from 'react';
-import { Appbar } from 'react-native-paper';
-import { View, } from 'react-native';
-import Styles from './styles';
 import BookList from '../../booklist/BookList';
-import { getSampleBookList } from '../../../models/Book';
 
 export default class SearchResultActivity extends React.Component{
     constructor(props){
@@ -15,10 +11,9 @@ export default class SearchResultActivity extends React.Component{
 
     render(){
         return (
-            <View style={Styles.fullScreen}>
-                <BookList
-                    bookList={this.state.bookList} />
-            </View>
+            <BookList
+                bookList={this.state.bookList}
+                navigation={this.props.navigation} />
         );
     }
 }

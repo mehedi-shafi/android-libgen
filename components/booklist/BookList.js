@@ -3,31 +3,40 @@ import { FlatList, View } from 'react-native';
 
 import BookRowComponent from '../bookrow/BookRow';
 import styles from './styles';
+import BookCardComponent from '../bookdetails/BookCard';
 
 import {
-    Surface,
-    List,
+    Modal,
+    Provider,
+    Portal,
 } from 'react-native-paper';
+import { TouchableWithoutFeedback, TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class BookList extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            bookList: props.bookList
+            bookList: props.bookList,
         }
+    }
+
+    openBookDetails = (item) => {
+        this.props.navigation.navigate('BookDetails', {
+            'book': item});
     }
 
     render(){
         return (
-            <View style={styles.fullScreen}>
-                <FlatList
+            <FlatList
                 data={this.state.bookList}
                 renderItem={
-                    ({item}) => <BookRowComponent book={item}/>
+                    ({item}) => 
+                        <TouchableWithoutFeedback onPress={() => {this.openBookDetails(item);}}>
+                            <BookRowComponent book={item}/>
+                        </TouchableWithoutFeedback>                            
                 }
                 keyExtractor={
-                    (item, index) => index.toString()}/>
-            </View>
+                    (item, index) => index.toString()}/>                    
         )
     }
 }

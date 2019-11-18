@@ -2,25 +2,30 @@ import React from 'react';
 
 import {
     Surface,
+    Provider,
     Text,
     Button,
     Title,
-    Subheading,   
+    Subheading,
+    Portal,
+    Modal  
 } from 'react-native-paper';
 
 import styles from './style';
+import BookCardComponent from '../bookdetails/BookCard';
 
 export default class BookRowComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            book: props.book
+            book: props.book,
+            detailsVisible: false
         };
     }
 
     render(){
         return(
-            <Surface style={styles.body}>
+            <Surface style={styles.body}>                
                 <Surface style={styles.bookRowCard}>
                     <Text style={styles.titleText}>{this.state.book.title}</Text>
                     <Text style={styles.subTitleText}>{this.state.book.author}</Text>
