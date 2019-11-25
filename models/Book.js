@@ -1,3 +1,4 @@
+import CONFIG from '../config';
 
 export default class Book{
 
@@ -16,12 +17,44 @@ export default class Book{
         this.last_modified  = this.validate(args.timelastmodified);
         this.description    = this.validate(args.description);
         this.torrent_url    = this.validate(args.torrent);
-        this.direct_url     = this.validate(args.direct);
-        this.thumb_url      = this.validate(args.coverurl);
+        this.direct_url     = this.generateDownloadUrl();
+        this.thumb_url      = this.generateThumbNailUrl(this.validate(args.coverurl));
+        this.fileSize       = this.humanReadableSize(this.validate(args.filesize));
+        this.fileSizeOrig   = args.filesize;
     }
 
     validate = (arg) => {
         return (arg) ? arg : '';
+    }
+
+    generateThumbNailUrl = (thumbLoc) => {
+        if (thumbLoc == ''){
+            return CONFIG.defaultThumb;
+        }
+        return `${CONFIG.coverUrl}/${thumbLoc}`;
+    }
+
+    generateDownloadUrl = () => {
+        if (this.md5 != ''){
+            return `${CONFIG.downloadUrl}/${Math.floor(this.id / 1000) * 1000}/${this.md5.toLowerCase()}/${this.author} - ${this.title}-${this.publisher} (${this.year}).${this.file_type}`
+        }
+        return 404;
+    }
+
+    humanReadableSize = (size) => {
+        if (size == ''){
+            return '0 Bytes';
+        }
+        if (size % 1048576 > 0) {
+            size = (size / 1048576).toFixed(2) + 'MB'
+        } 
+        else if (size % 1024 > 0) {
+            size = (size / 1024).toFixed(2) + 'KB'
+        } 
+        else {
+            size = size.toFixed(2) + 'Bytes'
+        }
+        return size;
     }
 }
 

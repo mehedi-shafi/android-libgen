@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CONFIG from '../../../config';
+
 import {
     View,
     StyleSheet,
@@ -33,7 +35,7 @@ export default class MainActivity extends React.Component{
             sort: 'def',
             sortmode: 'ASC',
             column: 'def',
-            mirror: 'http://gen.lib.rus.ec'
+            mirror: CONFIG.baseUrl,
         }, (response) => {       
             this.setState({searchResult: response});
             this.createBookList();

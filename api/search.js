@@ -1,7 +1,8 @@
 import async from 'async';
 
+import CONFIG from '../config';
 const search_path = '/search.php';
-const book_info_path = '/json.php';
+
 const ID_REGEX = /ID\:[^0-9]+[0-9]+[^0-9]/g;
 const RESULT_REGEX = /[0-9]+\ files\ found/i;
 
@@ -86,7 +87,7 @@ const getIds = (options, callback) => {
 let Search = (options, callback) => {
     getIds(options, (idList) => {
         console.log(idList);
-        const bookListUrl = options.mirror + book_info_path + `?ids=${idList.join(',')}&fields=*`;
+        const bookListUrl = CONFIG.bookInfoUrl + `?ids=${idList.join(',')}&fields=*`;
         fetch(bookListUrl)
             .then((data) => data.json())
             .then((data) => {

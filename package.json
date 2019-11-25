@@ -16,6 +16,7 @@
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-background-downloader": "^2.3.2",
     "react-native-gesture-handler": "^1.5.0",
     "react-native-material-design": "^0.3.7",
     "react-native-material-design-styles": "^0.2.7",
