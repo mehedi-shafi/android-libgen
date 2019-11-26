@@ -6,9 +6,12 @@ import {
     Text,
     Paragraph,
 } from 'react-native-paper';
-import RNBackgroundDownloader from 'react-native-background-downloader';
 
 import Styles from './styles';
+import {
+    FileSystem,
+    } from 'expo';
+
 
 export default class BookCardComponent extends React.Component{
     constructor(props){
@@ -19,19 +22,7 @@ export default class BookCardComponent extends React.Component{
     }
 
     startDownload = () => {
-        let task = RNBackgroundDownloader.download({
-            id: this.state.book.id,
-            url: this.state.book.direct_url,
-            destination: `${RNBackgroundDownloader.directories.documents}/${this.state.book.title}.${this.state.book.file_type}`
-        }).begin((expectedBytes) => {
-            console.log(`Going to download ${expectedBytes} bytes!`);
-        }).progress((percent) => {
-            console.log(`Downloaded: ${percent * 100}%`);
-        }).done(() => {
-            console.log('Download is done!');
-        }).error((error) => {
-            console.log('Download canceled due to error: ', error);
-        });
+        // const saveLocation = ${FileSystem}
     }
 
     render(){

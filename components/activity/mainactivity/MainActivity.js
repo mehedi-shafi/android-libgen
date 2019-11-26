@@ -4,13 +4,16 @@ import CONFIG from '../../../config';
 
 import {
     View,
-    StyleSheet,
+    StyleSheet
 } from 'react-native';
 
 import { 
     Searchbar,
     Text,
 } from 'react-native-paper';
+
+// import FileSystem from 'expo-file-system';
+import * as Permissions from 'expo-permissions';
 
 import Search from '../../../api/search';
 import Book from '../../../models/Book';
@@ -25,7 +28,16 @@ export default class MainActivity extends React.Component{
             searchString: '',
             searching: false,
             searchResult: []
-        };
+        };    
+        this.requestWriteStoragePermission.bind(this);
+        this.requestWriteStoragePermission()
+            .then((res) => {
+                console.log('Permission granted');
+                console.log(res);
+            })
+            .catch((err) => {
+                console.error(err);
+            })
     }
 
     runSearch = () => {
@@ -42,6 +54,16 @@ export default class MainActivity extends React.Component{
             
         });
     };
+
+    async requestWriteStoragePermission () {
+        return await Permissions.askAsync(Permissions.WRITE_EXTERNAL_STORAGE);
+        const { status, permissions } = await Permissions.askAsync(Permissions.WRITE_EXTERNAL_STORAGE);
+        if (status === 'granted') {
+          return {'granted': status};
+        } else {
+          throw new Error('Storage permission not granted');
+        }
+    }
 
     createBookList = () => {
         let books = [];
