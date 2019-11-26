@@ -9,7 +9,7 @@ import {
 
 import Styles from './styles';
 import {
-    FileSystem,
+    Linking,
     } from 'expo';
 
 
@@ -22,7 +22,11 @@ export default class BookCardComponent extends React.Component{
     }
 
     startDownload = () => {
-        // const saveLocation = ${FileSystem}
+        Linking.openURL(this.state.book.direct_url);
+    }
+
+    startTorrentDownload = () => {
+        Linking.openURL(this.state.book.torrent_url);
     }
 
     render(){
@@ -37,7 +41,7 @@ export default class BookCardComponent extends React.Component{
                     <Card.Cover source={{ uri: this.state.book.thumb_url}} />
                     <Card.Actions>
                         <Button onPress={this.startDownload}>Download</Button> 
-                        <Button>Torrent</Button>
+                        <Button onPress={this.startTorrentDownload}>Torrent</Button>
                     </Card.Actions>
                 </Card.Content>
             </Card>

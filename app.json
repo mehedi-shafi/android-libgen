@@ -28,7 +28,9 @@
       "supportsTablet": true
     },
     "android":{
-      "package": "com.libgen.android"
+      "package": "com.libgen.android",
+      "permissions":[
+      ]
     }
   }
 }
