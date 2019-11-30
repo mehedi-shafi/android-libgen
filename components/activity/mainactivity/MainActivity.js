@@ -51,12 +51,6 @@ export default class MainActivity extends React.Component{
         });
     };
 
-    showDemobook = () => {
-        this.props.navigation.navigate('BookDetails', {
-            'book': SampleBook
-        });
-    }
-
     createBookList = () => {
         let books = [];
         for (let i = 0; i < this.state.searchResult.length; ++i){
