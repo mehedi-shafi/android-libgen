@@ -13,7 +13,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff",
       "credit": "<a href=\"https://www.freepik.com/free-photos-vectors/background\">Background vector created by rawpixel.com - www.freepik.com</a>"
@@ -22,7 +22,8 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "**/*",
+      "assets/"
     ],
     "ios": {
       "supportsTablet": true
