@@ -8,7 +8,7 @@ export default styles = StyleSheet.create({
     },
     bookRowCard:{
         height: 200,
-        margin: 10,
+        margin: 5,
         padding: 15,
         elevation: 5,
         justifyContent: 'center'

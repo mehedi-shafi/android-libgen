@@ -4,9 +4,7 @@ import {
     Text,
     Paragraph,
     Button,
-    Provider,
-    Portal,
-    Modal,
+    Chip,
 } from 'react-native-paper';
 
 import {
@@ -28,7 +26,6 @@ export default class BookCardComponent extends React.Component{
         super(props);
         this.state = {
             book: props.book,
-            downloadModalVisible: false,
         };
     }
 
@@ -60,68 +57,74 @@ export default class BookCardComponent extends React.Component{
         )
     }
 
-    dismissModal = () => {
-        this.setState({downloadModalVisible: false});
-    }
-
-    openModal = () => {
-        this.setState({downloadModalVisible: true});
-    }
-
     render(){
         return(
-            <Provider
+            <View
                 style={Styles.activityStyle}>
-                <Portal>
-                    <Modal
-                        visible={this.state.downloadModalVisible}
-                        onDismiss={this.dismissModal}>
-                           
-                        </Modal>
-                    <View
-                        style={Styles.viewHolderCenter}>
-                        <Surface
-                            style={Styles.bookThumbNailHolder}>
-                            <Image
-                                style={Styles.bookThumbNail}
-                                source={{uri: this.state.book.thumb_url}} />
-                        </Surface>
-                    </View>
-                    <View
-                        style={Styles.downloadSection}>
-                        <Button
-                            mode='outlined'
-                            icon='download'
-                            style={Styles.downloadButton}
-                            onPress={this.openModal} >
-                            Download
-                        </Button>
-                    </View>
-                    <View>
+                <View
+                    style={Styles.viewHolderCenter}>
+                    <Surface
+                        style={Styles.bookThumbNailHolder}>
+                        <Image
+                            style={Styles.bookThumbNail}
+                            source={{uri: this.state.book.thumb_url}} />
+                    </Surface>
+                </View>
+                <View
+                    style={Styles.downloadSection}>
+                    <Chip
+                        textStyle={{textAlign: 'center'}} 
+                        style={Styles.chipStyle}
+                        mode='outlined'>
+                            {this.state.book.file_type}
+                    </Chip>
+                    <Chip
+                        textStyle={{textAlign: 'center'}}
+                        style={Styles.chipStyle}
+                        mode='outlined'>{this.state.book.fileSize}
+                    </Chip>
+                </View>
+                <View
+                    style={Styles.downloadSection}>                    
+                    <Button
+                        mode='outlined'
+                        icon='download'
+                        style={Styles.downloadButton}
+                        onPress={this.startDownload} >
+                        Download
+                    </Button>
+                    <Button
+                        mode='outlined'
+                        style={Styles.downloadButton}
+                        icon={require('../../assets/magnet.png')}
+                        onPress={this.startTorrentDownload}>
+                        Torrent
+                    </Button>
+                </View>
+                <View>
+                    <Text
+                        style={Styles.titleText}>
+                            {this.state.book.title}
+                    </Text>
+                    <Text style={{textAlign: 'center'}}>By:{'  '}
                         <Text
-                            style={Styles.titleText}>
-                                {this.state.book.title}
+                            style={Styles.subTitleText}>
+                            {this.state.book.author}
                         </Text>
-                        <Text style={{textAlign: 'center'}}>By:{'  '}
-                            <Text
-                                style={Styles.subTitleText}>
-                                {this.state.book.author}
-                            </Text>
-                        </Text>
-                    </View>
-                    <ScrollView
-                        nestedScrollEnabled={true}
-                        style={Styles.bookDescription}>
-                        <ViewMoreText
-                            numberOfLines={4}
-                            renderViewLess={this.renderViewLessOnPress}
-                            renderViewMore={this.renderViewMoreOnPress}
-                            textStyle={{textAlign: 'justify', marginLeft: 10, marginRight: 10}}>                                                
-                            <Paragraph>{this.state.book.description}</Paragraph>
-                        </ViewMoreText>
-                    </ScrollView>
-                </Portal>
-            </Provider>
+                    </Text>
+                </View>
+                <ScrollView
+                    nestedScrollEnabled={true}
+                    style={Styles.bookDescription}>
+                    <ViewMoreText
+                        numberOfLines={4}
+                        renderViewLess={this.renderViewLessOnPress}
+                        renderViewMore={this.renderViewMoreOnPress}
+                        textStyle={{textAlign: 'justify', marginLeft: 10, marginRight: 10}}>                                                
+                        <Paragraph>{this.state.book.description}</Paragraph>
+                    </ViewMoreText>
+                </ScrollView>
+            </View>
         )
     }
 }
