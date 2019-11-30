@@ -15,16 +15,23 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "credit": "<a href=\"https://www.freepik.com/free-photos-vectors/background\">Background vector created by rawpixel.com - www.freepik.com</a>"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "**/*",
+      "assets/"
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android":{
+      "package": "com.libgen.android",
+      "permissions":[
+      ]
     }
   }
 }

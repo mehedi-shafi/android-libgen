@@ -1,7 +1,8 @@
 import async from 'async';
 
+import CONFIG from '../config';
 const search_path = '/search.php';
-const book_info_path = '/json.php';
+
 const ID_REGEX = /ID\:[^0-9]+[0-9]+[^0-9]/g;
 const RESULT_REGEX = /[0-9]+\ files\ found/i;
 
@@ -41,13 +42,18 @@ let extractIds = (html) => {
     const idsResults = html.match(ID_REGEX);
     // reverse the order of the results because we walk through them
     // backwards with while(n--)
-    idsResults.reverse();
-    let n = idsResults.length;
-    while (n--){
-      var id = idsResults[n].replace(/[^0-9]/g,"");
-      if (!parseInt(id))
+    try{
+        idsResults.reverse();
+        let n = idsResults.length;
+        while (n--){
+          var id = idsResults[n].replace(/[^0-9]/g,"");
+          if (!parseInt(id))
+            return false;
+          ids.push(id);
+        }
+    }catch(err){
+        console.log(err);
         return false;
-      ids.push(id);
     }
     return ids;
 }
@@ -85,8 +91,8 @@ const getIds = (options, callback) => {
 
 let Search = (options, callback) => {
     getIds(options, (idList) => {
-        console.log(idList);
-        const bookListUrl = options.mirror + book_info_path + `?ids=${idList.join(',')}&fields=*`;
+        if (idList && idList.length > 0){
+        const bookListUrl = CONFIG.bookInfoUrl + `?ids=${idList.join(',')}&fields=*`;
         fetch(bookListUrl)
             .then((data) => data.json())
             .then((data) => {
@@ -94,7 +100,12 @@ let Search = (options, callback) => {
             })
             .catch((error) => {
                 console.error(error);
+                callback([], 'No book found');
             });
+        }
+        else{
+            callback([], 'No book found');
+        }
     });
 }
 export default Search;
