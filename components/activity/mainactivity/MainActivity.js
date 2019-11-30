@@ -10,7 +10,7 @@ import {
 import { 
     Searchbar,
     Text,
-    Button,
+    Snackbar,
 } from 'react-native-paper';
 
 import Search from '../../../api/search';
@@ -27,7 +27,8 @@ export default class MainActivity extends React.Component{
         this.state = {
             searchString: '',
             searching: false,
-            searchResult: []
+            searchResult: [],
+            errorSnack: false,
         };
     }
 
@@ -39,10 +40,14 @@ export default class MainActivity extends React.Component{
             sortmode: 'ASC',
             column: 'def',
             mirror: CONFIG.baseUrl,
-        }, (response) => {       
-            this.setState({searchResult: response});
-            this.createBookList();
-            
+        }, (response, error) => {
+            if(error){                
+                this.setState({errorSnack: true});
+            }else{
+                console.log(response);
+                this.setState({searchResult: response});
+                this.createBookList();            
+            }
         });
     };
 
@@ -75,6 +80,11 @@ export default class MainActivity extends React.Component{
                 <Text
                     style={styles.underText}
                 >{searchTip}</Text>
+                <Snackbar
+                    visible={this.state.errorSnack}
+                    onDismiss={() => this.setState({ errorSnack: false })}>
+                    Please provide a different search string.
+                </Snackbar>
             </View>
         )
     }
