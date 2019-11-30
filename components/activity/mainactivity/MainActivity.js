@@ -10,10 +10,13 @@ import {
 import { 
     Searchbar,
     Text,
+    Button,
 } from 'react-native-paper';
 
 import Search from '../../../api/search';
-import Book from '../../../models/Book';
+import {
+    Book,
+    SampleBook } from '../../../models/Book';
 import styles from './styles';
 
 const searchTip = "Search with book name, author name, or ISBN";  
@@ -43,6 +46,12 @@ export default class MainActivity extends React.Component{
         });
     };
 
+    showDemobook = () => {
+        this.props.navigation.navigate('BookDetails', {
+            'book': SampleBook
+        });
+    }
+
     createBookList = () => {
         let books = [];
         for (let i = 0; i < this.state.searchResult.length; ++i){
@@ -52,7 +61,11 @@ export default class MainActivity extends React.Component{
                 'bookList': books});
     }
 
-    render(){
+    componentDidMount(){
+        this.showDemobook();
+    }
+
+    render(){        
         return(
             <View
              style={styles.container}>
@@ -66,6 +79,8 @@ export default class MainActivity extends React.Component{
                 <Text
                     style={styles.underText}
                 >{searchTip}</Text>
+                <Button
+                    onPress={this.showDemobook}>Press Me</Button>
             </View>
         )
     }

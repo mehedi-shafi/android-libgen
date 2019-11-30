@@ -15,7 +15,7 @@ export default class Book{
         this.file_type      = this.validate(args.extension);
         this.time_added     = this.validate(args.timeadded);
         this.last_modified  = this.validate(args.timelastmodified);
-        this.description    = this.validate(args.description);
+        this.description    = this.removeTags(this.validate(args.descr));
         this.torrent_url    = this.validate(args.torrent);
         this.direct_url     = this.generateDownloadUrl();
         this.thumb_url      = this.generateThumbNailUrl(this.validate(args.coverurl));
@@ -55,6 +55,12 @@ export default class Book{
             size = size.toFixed(2) + 'Bytes'
         }
         return size;
+    }
+
+    removeTags = (text) => {
+        const regex = /(<([^>]+)>)/ig;
+        const result = text.replace(regex, '');
+        return result;
     }
 }
 
