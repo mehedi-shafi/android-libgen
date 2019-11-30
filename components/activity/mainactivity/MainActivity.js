@@ -14,9 +14,9 @@ import {
 } from 'react-native-paper';
 
 import Search from '../../../api/search';
-import {
-    Book,
-    SampleBook } from '../../../models/Book';
+import Book, 
+{ SampleBook } from '../../../models/Book';
+
 import styles from './styles';
 
 const searchTip = "Search with book name, author name, or ISBN";  
@@ -61,10 +61,6 @@ export default class MainActivity extends React.Component{
                 'bookList': books});
     }
 
-    componentDidMount(){
-        this.showDemobook();
-    }
-
     render(){        
         return(
             <View
@@ -79,8 +75,6 @@ export default class MainActivity extends React.Component{
                 <Text
                     style={styles.underText}
                 >{searchTip}</Text>
-                <Button
-                    onPress={this.showDemobook}>Press Me</Button>
             </View>
         )
     }

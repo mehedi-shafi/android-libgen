@@ -58,10 +58,16 @@ export default Styles = StyleSheet.create({
     downloadButton:{
         width: 150, 
         height: 40,
+        marginLeft: 5
     },
     downloadSection:{
         marginTop: 10,
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+    },
+    chipStyle: {
+        width: 80,
+        marginLeft: 5,
+        alignContent: 'center'
     }
 });

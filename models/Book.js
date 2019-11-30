@@ -16,7 +16,7 @@ export default class Book{
         this.time_added     = this.validate(args.timeadded);
         this.last_modified  = this.validate(args.timelastmodified);
         this.description    = this.removeTags(this.validate(args.descr));
-        this.torrent_url    = this.validate(args.torrent);
+        this.torrent_url    = this.generateTorrentDownloadUrl();
         this.direct_url     = this.generateDownloadUrl();
         this.thumb_url      = this.generateThumbNailUrl(this.validate(args.coverurl));
         this.fileSize       = this.humanReadableSize(this.validate(args.filesize));
@@ -61,6 +61,13 @@ export default class Book{
         const regex = /(<([^>]+)>)/ig;
         const result = text.replace(regex, '');
         return result;
+    }
+
+    generateTorrentDownloadUrl = () => {
+        if (this.md5 != ''){
+            return `${CONFIG.torrentBaseUrl}?md5=${this.md5}&oftorrent=`;
+        }
+        return 404;
     }
 }
 
