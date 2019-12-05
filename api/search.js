@@ -27,6 +27,10 @@ let urlBuilder = (options) => {
 
     const sortmode = (options.reverse ? 'DESC' : 'ASC');
 
+    if ('pageNo' in options){
+        currentPageNo = options.pageNo;
+    }
+
     return options.mirror +
             search_path +
             '?&req=' + encodeURIComponent(options.query) +
