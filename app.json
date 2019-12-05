@@ -1,37 +1,4 @@
 {
-  "expo": {
-    "name": "Libgen Android",
-    "slug": "android-libgen",
-    "privacy": "public",
-    "sdkVersion": "35.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff",
-      "credit": "<a href=\"https://www.freepik.com/free-photos-vectors/background\">Background vector created by rawpixel.com - www.freepik.com</a>"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*",
-      "assets/"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android":{
-      "package": "com.libgen.android",
-      "permissions":[
-      ]
-    }
-  }
+  "name": "android_ligen",
+  "displayName": "android_ligen"
 }
