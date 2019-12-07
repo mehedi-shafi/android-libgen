@@ -60,3 +60,4 @@ buck-out/
 
 # keys
 *.jks
+package-lock.json
