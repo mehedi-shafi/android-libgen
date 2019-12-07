@@ -4,7 +4,8 @@ export default styles = StyleSheet.create({
     body:{
       flex: 1,
       alignContent: 'center',
-      justifyContent: 'center',  
+      justifyContent: 'center',
+      borderRadius: 5,  
     },
     bookRowCard:{
         height: 200,
@@ -14,7 +15,8 @@ export default styles = StyleSheet.create({
         marginRight: 10,
         padding: 15,
         elevation: 5,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderRadius: 5,        
     },
     bookRowCardBig:{
         height: 300,

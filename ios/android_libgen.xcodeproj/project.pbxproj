@@ -6,7 +6,7 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* android_ligenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* android_ligenTests.m */; };
+		00E356F31AD99517003FC87E /* android_libgenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* android_libgenTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -14,23 +14,23 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* android_ligenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* android_ligenTests.m */; };
-		34B4BBA3FF8A49339D1C0736 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF477041694B489BB1FE2B87 /* AntDesign.ttf */; };
-		F3D75821CB5E4EF5A6171CB8 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6284C0B49A594DAB8A008217 /* Entypo.ttf */; };
-		8F806601F2D64666A066B27A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1C73490D494EDEB35672D2 /* EvilIcons.ttf */; };
-		07D981028B73446C959C32D2 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A54E25FC61EA4C33B414B75B /* Feather.ttf */; };
-		160BC7ED57DE486B835087C1 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 126173F292D945A3B133A876 /* FontAwesome.ttf */; };
-		DE408CD892154C1989DAF25E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C89B47C8B074A9D888DCA46 /* FontAwesome5_Brands.ttf */; };
-		8B9D0328D0224A3A93D9014B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F439818B9D6419F816366B4 /* FontAwesome5_Regular.ttf */; };
-		89091CCEB0A84E8699AC4A84 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB231CBC1FDF405B82032115 /* FontAwesome5_Solid.ttf */; };
-		3149BEDE683F4767A76FD4FD /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2D960BB7617492FA5C2AFA2 /* Fontisto.ttf */; };
-		B919EDA10DA342F291A7CDD0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5C413200EA246E198FEDF41 /* Foundation.ttf */; };
-		C28D3DA608114120A00A4E70 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA2458F9EBE4233977AD5F0 /* Ionicons.ttf */; };
-		00F05E3280CC4685BF30BE81 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF32518912D4EBD98CF5FBF /* MaterialCommunityIcons.ttf */; };
-		649944C21BFE4BC39EBE0941 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3998514A28EA447BADAFE24B /* MaterialIcons.ttf */; };
-		92888D5AA58F485DA78E5924 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 656A9D9D1B254C2EAF52A2D8 /* Octicons.ttf */; };
-		BCE7777DCBB34D609850D607 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE63668033CB4FA4B3658C4F /* SimpleLineIcons.ttf */; };
-		850EC1753AA94374A9731548 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECA45628EC984DF390192921 /* Zocial.ttf */; };
+		2DCD954D1E0B4F2C00145EB5 /* android_libgenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* android_libgenTests.m */; };
+		E03F18CB21374B05A92DE1B1 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8460391E9B44461E80ABEF45 /* AntDesign.ttf */; };
+		BE9320D4568F4D12AD47D6CE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1CDBE94096248288EC8B6D3 /* Entypo.ttf */; };
+		7E86F35D2F2A434B9E41510A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7BD7D354BDC4FA395AC24D6 /* EvilIcons.ttf */; };
+		FCCDFEB6ADE8431FA702AF4D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F436C4C9FD6C47CABDC1C4B2 /* Feather.ttf */; };
+		CC4F9084FB1C42E5ADB92FC5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AA41CFD2D994FE9A2A7FA74 /* FontAwesome.ttf */; };
+		23D70050CAC74FA39B9A582B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42DE6B33C944B969046A8AF /* FontAwesome5_Brands.ttf */; };
+		72D849A6FCB8403B8F3F3ECD /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 689DA8E7F9774771B11E63B7 /* FontAwesome5_Regular.ttf */; };
+		9234EC7A65484E3BB35C1DED /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F21F510D4F9743499CA666E7 /* FontAwesome5_Solid.ttf */; };
+		258539CFCC5C4D679BB56348 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4E62D43FEB14790A6D32AC5 /* Fontisto.ttf */; };
+		9F67215790BB42369F9FD88A /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5755D0A48B740D4B015B5C8 /* Foundation.ttf */; };
+		884B3A4A2B794B35B327A633 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 072619011D134DA4B0ED0809 /* Ionicons.ttf */; };
+		74556AC0488D4AF39208A8A9 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86382D3946304D9A9038BE6B /* MaterialCommunityIcons.ttf */; };
+		C86823EB43294F9AA04C3947 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41D1728CD0E44C3AA1DF182E /* MaterialIcons.ttf */; };
+		9367654C42CC4C53B05F01CB /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0415F24FCC8D437A8AA5D831 /* Octicons.ttf */; };
+		52057693DDA8498A93B1F984 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F935A376DA0431AA521137B /* SimpleLineIcons.ttf */; };
+		15A8871294C04AC28C48BDAE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4EAF501B8254AA6A9B458F6 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,49 +39,49 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = android_ligen;
+			remoteInfo = android_libgen;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "android_ligen-tvOS";
+			remoteInfo = "android_libgen-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* android_ligenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = android_ligenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* android_libgenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = android_libgenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* android_ligenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = android_ligenTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* android_ligen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = android_ligen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = android_ligen/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = android_ligen/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* android_libgenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = android_libgenTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* android_libgen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = android_libgen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = android_libgen/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = android_libgen/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = android_ligen/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = android_ligen/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = android_ligen/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* android_ligen-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "android_ligen-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* android_ligen-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "android_ligen-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = android_libgen/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = android_libgen/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = android_libgen/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* android_libgen-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "android_libgen-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* android_libgen-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "android_libgen-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		BF477041694B489BB1FE2B87 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6284C0B49A594DAB8A008217 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3C1C73490D494EDEB35672D2 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A54E25FC61EA4C33B414B75B /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		126173F292D945A3B133A876 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7C89B47C8B074A9D888DCA46 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9F439818B9D6419F816366B4 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BB231CBC1FDF405B82032115 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A2D960BB7617492FA5C2AFA2 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C5C413200EA246E198FEDF41 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6FA2458F9EBE4233977AD5F0 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2FF32518912D4EBD98CF5FBF /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3998514A28EA447BADAFE24B /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		656A9D9D1B254C2EAF52A2D8 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DE63668033CB4FA4B3658C4F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ECA45628EC984DF390192921 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8460391E9B44461E80ABEF45 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1CDBE94096248288EC8B6D3 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B7BD7D354BDC4FA395AC24D6 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F436C4C9FD6C47CABDC1C4B2 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7AA41CFD2D994FE9A2A7FA74 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A42DE6B33C944B969046A8AF /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		689DA8E7F9774771B11E63B7 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F21F510D4F9743499CA666E7 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A4E62D43FEB14790A6D32AC5 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5755D0A48B740D4B015B5C8 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		072619011D134DA4B0ED0809 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86382D3946304D9A9038BE6B /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		41D1728CD0E44C3AA1DF182E /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0415F24FCC8D437A8AA5D831 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F935A376DA0431AA521137B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E4EAF501B8254AA6A9B458F6 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,13 +116,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* android_ligenTests */ = {
+		00E356EF1AD99517003FC87E /* android_libgenTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* android_ligenTests.m */,
+				00E356F21AD99517003FC87E /* android_libgenTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = android_ligenTests;
+			path = android_libgenTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -133,7 +133,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* android_ligen */ = {
+		13B07FAE1A68108700A75B9A /* android_libgen */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -144,7 +144,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = android_ligen;
+			name = android_libgen;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -166,12 +166,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* android_ligen */,
+				13B07FAE1A68108700A75B9A /* android_libgen */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* android_ligenTests */,
+				00E356EF1AD99517003FC87E /* android_libgenTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				4008B2B041E04A6A93BFC24B /* Resources */,
+				58B71DEA3BFD4723AB25771E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -181,33 +181,33 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* android_ligen.app */,
-				00E356EE1AD99517003FC87E /* android_ligenTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* android_ligen-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* android_ligen-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* android_libgen.app */,
+				00E356EE1AD99517003FC87E /* android_libgenTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* android_libgen-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* android_libgen-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4008B2B041E04A6A93BFC24B /* Resources */ = {
+		58B71DEA3BFD4723AB25771E /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				BF477041694B489BB1FE2B87 /* AntDesign.ttf */,
-				6284C0B49A594DAB8A008217 /* Entypo.ttf */,
-				3C1C73490D494EDEB35672D2 /* EvilIcons.ttf */,
-				A54E25FC61EA4C33B414B75B /* Feather.ttf */,
-				126173F292D945A3B133A876 /* FontAwesome.ttf */,
-				7C89B47C8B074A9D888DCA46 /* FontAwesome5_Brands.ttf */,
-				9F439818B9D6419F816366B4 /* FontAwesome5_Regular.ttf */,
-				BB231CBC1FDF405B82032115 /* FontAwesome5_Solid.ttf */,
-				A2D960BB7617492FA5C2AFA2 /* Fontisto.ttf */,
-				C5C413200EA246E198FEDF41 /* Foundation.ttf */,
-				6FA2458F9EBE4233977AD5F0 /* Ionicons.ttf */,
-				2FF32518912D4EBD98CF5FBF /* MaterialCommunityIcons.ttf */,
-				3998514A28EA447BADAFE24B /* MaterialIcons.ttf */,
-				656A9D9D1B254C2EAF52A2D8 /* Octicons.ttf */,
-				DE63668033CB4FA4B3658C4F /* SimpleLineIcons.ttf */,
-				ECA45628EC984DF390192921 /* Zocial.ttf */,
+				8460391E9B44461E80ABEF45 /* AntDesign.ttf */,
+				C1CDBE94096248288EC8B6D3 /* Entypo.ttf */,
+				B7BD7D354BDC4FA395AC24D6 /* EvilIcons.ttf */,
+				F436C4C9FD6C47CABDC1C4B2 /* Feather.ttf */,
+				7AA41CFD2D994FE9A2A7FA74 /* FontAwesome.ttf */,
+				A42DE6B33C944B969046A8AF /* FontAwesome5_Brands.ttf */,
+				689DA8E7F9774771B11E63B7 /* FontAwesome5_Regular.ttf */,
+				F21F510D4F9743499CA666E7 /* FontAwesome5_Solid.ttf */,
+				A4E62D43FEB14790A6D32AC5 /* Fontisto.ttf */,
+				D5755D0A48B740D4B015B5C8 /* Foundation.ttf */,
+				072619011D134DA4B0ED0809 /* Ionicons.ttf */,
+				86382D3946304D9A9038BE6B /* MaterialCommunityIcons.ttf */,
+				41D1728CD0E44C3AA1DF182E /* MaterialIcons.ttf */,
+				0415F24FCC8D437A8AA5D831 /* Octicons.ttf */,
+				6F935A376DA0431AA521137B /* SimpleLineIcons.ttf */,
+				E4EAF501B8254AA6A9B458F6 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* android_ligenTests */ = {
+		00E356ED1AD99517003FC87E /* android_libgenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "android_ligenTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "android_libgenTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -229,14 +229,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = android_ligenTests;
-			productName = android_ligenTests;
-			productReference = 00E356EE1AD99517003FC87E /* android_ligenTests.xctest */;
+			name = android_libgenTests;
+			productName = android_libgenTests;
+			productReference = 00E356EE1AD99517003FC87E /* android_libgenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* android_ligen */ = {
+		13B07F861A680F5B00A75B9A /* android_libgen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "android_ligen" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "android_libgen" */;
 			buildPhases = (
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -248,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = android_ligen;
-			productName = "android_ligen";
-			productReference = 13B07F961A680F5B00A75B9A /* android_ligen.app */;
+			name = android_libgen;
+			productName = "android_libgen";
+			productReference = 13B07F961A680F5B00A75B9A /* android_libgen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* android_ligen-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* android_libgen-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_ligen-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_libgen-tvOS" */;
 			buildPhases = (
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -267,14 +267,14 @@
 			);
 			dependencies = (
 			);
-			name = "android_ligen-tvOS";
-			productName = "android_ligen-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* android_ligen-tvOS.app */;
+			name = "android_libgen-tvOS";
+			productName = "android_libgen-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* android_libgen-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* android_ligen-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* android_libgen-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_ligen-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_libgen-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -285,9 +285,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "android_ligen-tvOSTests";
-			productName = "android_ligen-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* android_ligen-tvOSTests.xctest */;
+			name = "android_libgen-tvOSTests";
+			productName = "android_libgen-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* android_libgen-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "android_ligen" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "android_libgen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -327,10 +327,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* android_ligen */,
-				00E356ED1AD99517003FC87E /* android_ligenTests */,
-				2D02E47A1E0B4A5D006451C7 /* android_ligen-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* android_ligen-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* android_libgen */,
+				00E356ED1AD99517003FC87E /* android_libgenTests */,
+				2D02E47A1E0B4A5D006451C7 /* android_libgen-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* android_libgen-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,22 +349,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				34B4BBA3FF8A49339D1C0736 /* AntDesign.ttf in Resources */,
-				F3D75821CB5E4EF5A6171CB8 /* Entypo.ttf in Resources */,
-				8F806601F2D64666A066B27A /* EvilIcons.ttf in Resources */,
-				07D981028B73446C959C32D2 /* Feather.ttf in Resources */,
-				160BC7ED57DE486B835087C1 /* FontAwesome.ttf in Resources */,
-				DE408CD892154C1989DAF25E /* FontAwesome5_Brands.ttf in Resources */,
-				8B9D0328D0224A3A93D9014B /* FontAwesome5_Regular.ttf in Resources */,
-				89091CCEB0A84E8699AC4A84 /* FontAwesome5_Solid.ttf in Resources */,
-				3149BEDE683F4767A76FD4FD /* Fontisto.ttf in Resources */,
-				B919EDA10DA342F291A7CDD0 /* Foundation.ttf in Resources */,
-				C28D3DA608114120A00A4E70 /* Ionicons.ttf in Resources */,
-				00F05E3280CC4685BF30BE81 /* MaterialCommunityIcons.ttf in Resources */,
-				649944C21BFE4BC39EBE0941 /* MaterialIcons.ttf in Resources */,
-				92888D5AA58F485DA78E5924 /* Octicons.ttf in Resources */,
-				BCE7777DCBB34D609850D607 /* SimpleLineIcons.ttf in Resources */,
-				850EC1753AA94374A9731548 /* Zocial.ttf in Resources */,
+				E03F18CB21374B05A92DE1B1 /* AntDesign.ttf in Resources */,
+				BE9320D4568F4D12AD47D6CE /* Entypo.ttf in Resources */,
+				7E86F35D2F2A434B9E41510A /* EvilIcons.ttf in Resources */,
+				FCCDFEB6ADE8431FA702AF4D /* Feather.ttf in Resources */,
+				CC4F9084FB1C42E5ADB92FC5 /* FontAwesome.ttf in Resources */,
+				23D70050CAC74FA39B9A582B /* FontAwesome5_Brands.ttf in Resources */,
+				72D849A6FCB8403B8F3F3ECD /* FontAwesome5_Regular.ttf in Resources */,
+				9234EC7A65484E3BB35C1DED /* FontAwesome5_Solid.ttf in Resources */,
+				258539CFCC5C4D679BB56348 /* Fontisto.ttf in Resources */,
+				9F67215790BB42369F9FD88A /* Foundation.ttf in Resources */,
+				884B3A4A2B794B35B327A633 /* Ionicons.ttf in Resources */,
+				74556AC0488D4AF39208A8A9 /* MaterialCommunityIcons.ttf in Resources */,
+				C86823EB43294F9AA04C3947 /* MaterialIcons.ttf in Resources */,
+				9367654C42CC4C53B05F01CB /* Octicons.ttf in Resources */,
+				52057693DDA8498A93B1F984 /* SimpleLineIcons.ttf in Resources */,
+				15A8871294C04AC28C48BDAE /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* android_ligenTests.m in Sources */,
+				00E356F31AD99517003FC87E /* android_libgenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* android_ligenTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* android_libgenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,12 +494,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* android_ligen */;
+			target = 13B07F861A680F5B00A75B9A /* android_libgen */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* android_ligen-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* android_libgen-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -511,7 +511,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = android_ligen;
+			path = android_libgen;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -525,7 +525,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = android_ligenTests/Info.plist;
+				INFOPLIST_FILE = android_libgenTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -535,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_ligen.app/android_ligen";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_libgen.app/android_libgen";
 			};
 			name = Debug;
 		};
@@ -544,7 +544,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = android_ligenTests/Info.plist;
+				INFOPLIST_FILE = android_libgenTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -554,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_ligen.app/android_ligen";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_libgen.app/android_libgen";
 			};
 			name = Release;
 		};
@@ -564,7 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = android_ligen/Info.plist;
+				INFOPLIST_FILE = android_libgen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -572,7 +572,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = android_ligen;
+				PRODUCT_NAME = android_libgen;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -582,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = android_ligen/Info.plist;
+				INFOPLIST_FILE = android_libgen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -590,7 +590,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = android_ligen;
+				PRODUCT_NAME = android_libgen;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -607,14 +607,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "android_ligen-tvOS/Info.plist";
+				INFOPLIST_FILE = "android_libgen-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_ligen-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_libgen-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -634,14 +634,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "android_ligen-tvOS/Info.plist";
+				INFOPLIST_FILE = "android_libgen-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_ligen-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_libgen-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -660,17 +660,17 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "android_ligen-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "android_libgen-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_ligen-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_libgen-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_ligen-tvOS.app/android_ligen-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_libgen-tvOS.app/android_libgen-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -686,17 +686,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "android_ligen-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "android_libgen-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_ligen-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.android_libgen-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_ligen-tvOS.app/android_ligen-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/android_libgen-tvOS.app/android_libgen-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -803,7 +803,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "android_ligenTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "android_libgenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -812,7 +812,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "android_ligen" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "android_libgen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -821,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_ligen-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_libgen-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -830,7 +830,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_ligen-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "android_libgen-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -839,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "android_ligen" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "android_libgen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

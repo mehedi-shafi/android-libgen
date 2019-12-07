@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "android_ligen.app"
-               BlueprintName = "android_ligen"
-               ReferencedContainer = "container:android_ligen.xcodeproj">
+               BuildableName = "android_libgen.app"
+               BlueprintName = "android_libgen"
+               ReferencedContainer = "container:android_libgen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "android_ligenTests.xctest"
-               BlueprintName = "android_ligenTests"
-               ReferencedContainer = "container:android_ligen.xcodeproj">
+               BuildableName = "android_libgenTests.xctest"
+               BlueprintName = "android_libgenTests"
+               ReferencedContainer = "container:android_libgen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "android_ligenTests.xctest"
-               BlueprintName = "android_ligenTests"
-               ReferencedContainer = "container:android_ligen.xcodeproj">
+               BuildableName = "android_libgenTests.xctest"
+               BlueprintName = "android_libgenTests"
+               ReferencedContainer = "container:android_libgen.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "android_ligen.app"
-            BlueprintName = "android_ligen"
-            ReferencedContainer = "container:android_ligen.xcodeproj">
+            BuildableName = "android_libgen.app"
+            BlueprintName = "android_libgen"
+            ReferencedContainer = "container:android_libgen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "android_ligen.app"
-            BlueprintName = "android_ligen"
-            ReferencedContainer = "container:android_ligen.xcodeproj">
+            BuildableName = "android_libgen.app"
+            BlueprintName = "android_libgen"
+            ReferencedContainer = "container:android_libgen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "android_ligen.app"
-            BlueprintName = "android_ligen"
-            ReferencedContainer = "container:android_ligen.xcodeproj">
+            BuildableName = "android_libgen.app"
+            BlueprintName = "android_libgen"
+            ReferencedContainer = "container:android_libgen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

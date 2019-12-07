@@ -1,19 +1,18 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { 
+    FlatList,
+    TouchableOpacity
+} from 'react-native';
 
 import BookRowComponent from '../bookrow/BookRow';
 import styles from './styles';
-import BookCardComponent from '../bookdetails/BookCard';
 
 import Search from '../../api/search';
 
 import {
-    Modal,
-    Provider,
-    Portal,
     ActivityIndicator,
+    Snackbar
 } from 'react-native-paper';
-import { TouchableWithoutFeedback, TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class BookList extends React.Component{
     constructor(props){
@@ -28,13 +27,19 @@ export default class BookList extends React.Component{
         }
     }
 
+    openBookDetails = (item) => {
+        console.log(`Opening book ${item.title}`);
+        this.props.navigation.navigate('BookDetails', {
+            'book': item});
+    }
+
     fetchMoreBooks = () => {
         this.setState({loading: true});        
         let opts = this.state.searchParam;
         opts['pageNo'] = this.state.nextPage;
         Search(opts, (response, error) => {
             if (error){
-                this.setState({errorSnack: true});
+                this.setState({errorSnack: true, loading: false});
             }
             else{
                 let tempList = this.state.bookList;
@@ -44,14 +49,18 @@ export default class BookList extends React.Component{
             }
         })
     }
-
-    openBookDetails = (item) => {
-        this.props.navigation.navigate('BookDetails', {
-            'book': item});
-    }
     
     renderFooter = () =>{
-        if (!this.state.loading) return null;
+        if (!this.state.loading && !this.state.errorSnack) return null;
+        if (this.state.errorSnack){
+            return (
+                <Snackbar
+                    visible={this.state.errorSnack}
+                    onDismiss={() => this.setState({ errorSnack: false })}>
+                    No more book loaded.
+                </Snackbar>
+            )
+        }
         return (
             <ActivityIndicator animating={true} size='small' />
         )
@@ -63,13 +72,16 @@ export default class BookList extends React.Component{
                 data={this.state.bookList}
                 renderItem={
                     ({item}) => 
-                        <TouchableWithoutFeedback onPress={() => {this.openBookDetails(item);}}>
+                        <TouchableOpacity 
+                            onPress={() => {
+                                this.openBookDetails(item);
+                            }}>
                             <BookRowComponent book={item}/>
-                        </TouchableWithoutFeedback>                            
+                        </TouchableOpacity>
                 }
                 keyExtractor={
                     (item, index) => index.toString()}
-                ListFooterComponent={this.renderFooter}
+                renderFooter={this.renderFooter}
                 onEndReached={this.fetchMoreBooks}
                 onEndReachedThreshold={3}/>                    
         )

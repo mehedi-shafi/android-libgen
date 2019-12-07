@@ -50,14 +50,14 @@ let extractIds = (html) => {
         idsResults.reverse();
         let n = idsResults.length;
         while (n--){
-          var id = idsResults[n].replace(/[^0-9]/g,"");
-          if (!parseInt(id))
-            return false;
-          ids.push(id);
+            var id = idsResults[n].replace(/[^0-9]/g,"");
+            if (!parseInt(id))
+                return false;
+            ids.push(id);
         }
     }catch(err){
-        console.log(err);
         return false;
+        console.log(err);
     }
     return ids;
 }
@@ -93,7 +93,8 @@ const getIds = (options, callback) => {
     );
 }
 
-let Search = (options, callback) => {
+let Search = (options, callback) => {    
+    console.log(`Running search for ${options.query}`);
     getIds(options, (idList) => {
         if (idList && idList.length > 0){
         const bookListUrl = CONFIG.bookInfoUrl + `?ids=${idList.join(',')}&fields=*`;
