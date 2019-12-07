@@ -1,4 +1,4 @@
-package com.android_ligen;
+package com.android_libgen;
 
 import android.app.Application;
 import android.content.Context;

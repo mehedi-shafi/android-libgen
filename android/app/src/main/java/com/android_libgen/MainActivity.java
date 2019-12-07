@@ -1,4 +1,4 @@
-package com.android_ligen;
+package com.android_libgen;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "android_ligen";
+    return "android_libgen";
   }
 }

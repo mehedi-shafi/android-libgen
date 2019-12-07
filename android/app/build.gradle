@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.android_ligen"
+        applicationId "com.android_libgen"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

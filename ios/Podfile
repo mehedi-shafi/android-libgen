@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'android_ligen' do
-  # Pods for android_ligen
+target 'android_libgen' do
+  # Pods for android_libgen
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,7 +34,7 @@ target 'android_ligen' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'android_ligenTests' do
+  target 'android_libgenTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'android_ligen' do
   use_native_modules!
 end
 
-target 'android_ligen-tvOS' do
-  # Pods for android_ligen-tvOS
+target 'android_libgen-tvOS' do
+  # Pods for android_libgen-tvOS
 
-  target 'android_ligen-tvOSTests' do
+  target 'android_libgen-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
