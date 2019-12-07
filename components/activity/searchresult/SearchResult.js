@@ -5,7 +5,8 @@ export default class SearchResultActivity extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            bookList: props.navigation.getParam('bookList')
+            bookList: props.navigation.getParam('bookList'),
+            searchParam: props.navigation.getParam('searchParam')
         };    
     }
 
@@ -13,6 +14,7 @@ export default class SearchResultActivity extends React.Component{
         return (
             <BookList
                 bookList={this.state.bookList}
+                searchParam={this.state.searchParam}
                 navigation={this.props.navigation} />
         );
     }

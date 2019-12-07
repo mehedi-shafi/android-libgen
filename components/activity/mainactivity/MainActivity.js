@@ -33,31 +33,32 @@ export default class MainActivity extends React.Component{
     }
 
     runSearch = () => {
-        Search({
+        let searchParam = {
             query: this.state.searchString,
             count: 25,
             sort: 'def',
             sortmode: 'ASC',
             column: 'def',
             mirror: CONFIG.baseUrl,
-        }, (response, error) => {
+        };
+        Search(searchParam, (response, error) => {
             if(error){                
                 this.setState({errorSnack: true});
             }else{
-                console.log(response);
                 this.setState({searchResult: response});
-                this.createBookList();            
+                this.createBookList(searchParam);            
             }
         });
     };
 
-    createBookList = () => {
+    createBookList = (searchParam) => {
         let books = [];
         for (let i = 0; i < this.state.searchResult.length; ++i){
             books.push(new Book(this.state.searchResult[i]));
         }
         this.props.navigation.navigate('SearchResult', {
-                'bookList': books});
+                'bookList': books,
+                'searchParam': searchParam});
     }
 
     render(){        

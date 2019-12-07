@@ -2,30 +2,26 @@ import React from 'react';
 
 import {
     Surface,
-    Provider,
     Text,
-    Button,
-    Title,
-    Subheading,
-    Portal,
-    Modal  
 } from 'react-native-paper';
 
+import {
+    View,
+} from 'react-native';
+
 import styles from './style';
-import BookCardComponent from '../bookdetails/BookCard';
 
 export default class BookRowComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             book: props.book,
-            detailsVisible: false
         };
     }
 
     render(){
         return(
-            <Surface style={styles.body}>                
+            <View style={styles.body}>                
                 <Surface style={styles.bookRowCard}>
                     <Text style={styles.titleText}>{this.state.book.title}</Text>
                     <Text style={styles.subTitleText}>{this.state.book.author}</Text>
@@ -42,7 +38,7 @@ export default class BookRowComponent extends React.Component{
                         <Text style={styles.infoText}>{this.state.book.file_type}</Text>
                     </Text>
                 </Surface>
-            </Surface>
+            </View>
         )
     }
 }
