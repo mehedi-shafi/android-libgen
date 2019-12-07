@@ -23,7 +23,8 @@ export default class BookList extends React.Component{
             currentListLoc: 0,
             searchParam: props.searchParam,
             errorSnack: false,
-            loading: false
+            loading: false,
+            noMore: false
         }
     }
 
@@ -34,12 +35,13 @@ export default class BookList extends React.Component{
     }
 
     fetchMoreBooks = () => {
-        this.setState({loading: true});        
+        if (this.state.noMore) return null;
+        this.setState({loading: true});       
         let opts = this.state.searchParam;
         opts['pageNo'] = this.state.nextPage;
         Search(opts, (response, error) => {
             if (error){
-                this.setState({errorSnack: true, loading: false});
+                this.setState({errorSnack: true, loading: false, noMore: true});
             }
             else{
                 let tempList = this.state.bookList;
