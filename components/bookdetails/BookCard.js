@@ -11,15 +11,12 @@ import {
     View,
     Image,
     ScrollView,
+    Linking,
 } from 'react-native';
 
 import ViewMoreText from 'react-native-view-more-text';
 
 import Styles from './styles';
-
-import {
-    Linking,
-    } from 'expo';
 
 export default class BookCardComponent extends React.Component{
     constructor(props){
