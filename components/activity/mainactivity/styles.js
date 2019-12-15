@@ -17,5 +17,8 @@ export default styles = StyleSheet.create({
         marginTop: 8,
         marginRight: 20,
         fontSize: 16
+    },
+    activityIndicatorStyle:{
+        marginTop: 10,
     }
   });

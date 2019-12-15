@@ -11,6 +11,7 @@ import {
     Searchbar,
     Text,
     Snackbar,
+    ActivityIndicator,
 } from 'react-native-paper';
 
 import Search from '../../../api/search';
@@ -33,6 +34,7 @@ export default class MainActivity extends React.Component{
     }
 
     runSearch = () => {
+        this.setState({searching: true});
         let searchParam = {
             query: this.state.searchString,
             count: 25,
@@ -41,11 +43,11 @@ export default class MainActivity extends React.Component{
             column: 'def',
             mirror: CONFIG.baseUrl,
         };
-        Search(searchParam, (response, error) => {
+        Search(searchParam, (response, error) => {        
             if(error){                
-                this.setState({errorSnack: true});
+                this.setState({errorSnack: true, searching: false});
             }else{
-                this.setState({searchResult: response});
+                this.setState({searchResult: response, searching: false});
                 this.createBookList(searchParam);            
             }
         });
@@ -59,6 +61,19 @@ export default class MainActivity extends React.Component{
         this.props.navigation.navigate('SearchResult', {
                 'bookList': books,
                 'searchParam': searchParam});
+    }
+
+    renderloading = () => {
+        if (this.state.searching){
+            return (
+                <ActivityIndicator 
+                    animating={true} 
+                    size='large'
+                    style={styles.activityIndicatorStyle} />
+            )
+        }else{
+            return null;
+        }
     }
 
     render(){        
@@ -75,6 +90,7 @@ export default class MainActivity extends React.Component{
                 <Text
                     style={styles.underText}
                 >{searchTip}</Text>
+                {this.renderloading()}
                 <Snackbar
                     visible={this.state.errorSnack}
                     onDismiss={() => this.setState({ errorSnack: false })}>
