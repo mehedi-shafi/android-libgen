@@ -2,7 +2,7 @@ name: react_native_android
 
 on:
   push:
-    branches: [ release/* ]
+    branches: [ master, release/* ]
   pull_request:
     branches: [ master ]
 
