@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCardComponent from '../../bookdetails/BookCard';
+import BookCardComponent from '../../bookdetails';
 import { View } from 'react-native';
 import Styles from './styles';
 
