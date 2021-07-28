@@ -9,10 +9,12 @@
     "test": "jest",
     "lint": "eslint .",
     "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
-    "build:apk": "npm run bundle:android && cd android/ && ./gradlew assembleDebug"
+    "build:apk": "npm run bundle:android && cd android/ && ./gradlew assembleDebug",
+    "postinstall": "npx jetify"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "jetifier": "^1.6.8",
     "react": "16.9.0",
     "react-dom": "16.8.3",
     "react-native": "^0.64.2",
